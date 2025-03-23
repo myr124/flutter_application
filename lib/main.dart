@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
             child: Text("Test App", style: TextStyle(color: Colors.white)),
           ),
           leading: Icon(Icons.menu, color: Colors.white),
+          actions: [Icon(Icons.abc)],
           backgroundColor: const Color.fromARGB(255, 0, 23, 62),
           elevation: 20,
         ),
@@ -40,19 +41,5 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class Main extends StatefulWidget {
-  const Main({Key? key}) : super(key: key);
-
-  @override
-  _MainState createState() => _MainState();
-}
-
-class _MainState extends State<Main> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
